@@ -1,0 +1,15 @@
+asn1crypto==0.24.0
+cryptography==2.6.1
+dbus-python==1.2.14
+Django==1.11.23
+entrypoints==0.3
+gunicorn==20.0.4
+keyring==18.0.1
+keyrings.alt==3.2.0
+pycrypto==2.6.1
+PyGObject==3.34.0
+pytz==2019.3
+pyxdg==0.26
+SecretStorage==2.3.1
+six==1.13.0
+sqlparse==0.2.4

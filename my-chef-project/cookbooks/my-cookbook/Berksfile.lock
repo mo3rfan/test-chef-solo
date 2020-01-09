@@ -1,0 +1,12 @@
+DEPENDENCIES
+  firewall (~> 2.7.0)
+  my-cookbook
+    path: .
+    metadata: true
+
+GRAPH
+  chef-sugar (5.1.8)
+  firewall (2.7.0)
+    chef-sugar (>= 0.0.0)
+  my-cookbook (0.1.0)
+    firewall (~> 2.7.0)
