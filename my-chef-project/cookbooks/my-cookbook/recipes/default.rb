@@ -66,6 +66,8 @@ end
 link '/etc/nginx/sites-enabled/default' do
 action :delete
 end
+
+node.normal['firewall']['allow_ssh'] = true
 firewall 'default' # This will install and enable the Uncomplicated Firewall (or UFW) on Debian.
 firewall_rule 'open_tcp_port_eighty' do
 port 80
