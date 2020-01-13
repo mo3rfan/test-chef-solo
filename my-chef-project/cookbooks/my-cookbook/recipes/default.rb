@@ -74,3 +74,8 @@ port 80
 protocol :tcp
 command :allow
 end
+
+service 'nginx' do
+	action :enable
+	action :start
+end
