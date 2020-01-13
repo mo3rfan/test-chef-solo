@@ -4,11 +4,11 @@ server_name example.com;
 
 location = /favicon.ico { access_log off; log_not_found off; }
 location /static/ {
-root /home/myapp/myapp;
+root /home/bob/myapp/myapp;
 }
 
 location / {
 include proxy_params;
-proxy_pass http://localhost:8080
+proxy_pass http://localhost:8080;
 }
 }
