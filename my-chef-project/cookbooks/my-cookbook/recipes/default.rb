@@ -40,7 +40,7 @@ Description: 'Django on Gunicorn',
 After: 'network.target',
 },
 Service: {
-ExecStart: '/usr/local/bin/gunicorn --workers 3 "bind localhost:8080 myapp.wsgi:application"',
+ExecStart: '/usr/local/bin/gunicorn --workers 3 --bind localhost:8080 myapp.wsgi:application',
 User: 'bob',
 Group: 'www-data',
 WorkingDirectory: '/home/bob/myapp',
